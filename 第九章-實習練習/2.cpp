@@ -29,3 +29,10 @@ int main()
     cout << myCar1.brand << " " << myCar1.color << " " << myCar1.calculatePrice() << endl;
     cout << myCar2.brand << " " << myCar2.color << " " << myCar2.calculatePrice() << endl;
 }
+
+/*
+延續上一題，請額外在物件中撰寫計算價格的方法(油價*油箱油量)
+double calculatePrice()
+
+main函式中已撰寫好程式，請勿修改。
+*/

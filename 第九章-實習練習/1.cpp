@@ -5,10 +5,9 @@ using namespace std;
 class Car
 {
 public:
-    string brand;
-    string color;
+    string brand, color;
     double oilPrice;
-    double tank;
+    int tank;
 };
 
 int main()
@@ -25,3 +24,12 @@ int main()
     cout << myCar1.brand << " " << myCar1.color << " " << myCar1.oilPrice * myCar1.tank << endl;
     cout << myCar2.brand << " " << myCar2.color << " " << myCar2.oilPrice * myCar2.tank << endl;
 }
+
+/*
+請撰寫一個物件Car，該物件中有下列四種屬性:
+    string brand, color
+    double oilPrice
+    int tank
+
+main函式中已撰寫好程式，請勿修改。
+*/
