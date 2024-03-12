@@ -42,11 +42,11 @@ int main()
 }
 
 /*
-參考TestCircle.cpp，請以物件設計長方形Rectangle。data fields: double width, double height。
-
-並完成取得面積getArea()、取得周長getPerimeter()函式
+設計物件長方形Rectangle:
+    double width, height
+    取得面積getArea()
+    取得周長getPerimeter()
 
 輸入2組長方形的長寬作為建構2個長方形的參數，輸出2個長方形的面積和周長。
-
 再將第二個長方形的長改為5.0、寬改為2.5，輸出修改後第2個長方形的面積和周長。
 */
