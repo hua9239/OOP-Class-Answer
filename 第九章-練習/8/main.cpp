@@ -1,36 +1,36 @@
-#include <iostream>
-using namespace std;
+#include "Score.h"
 
 int main()
 {
-    cout << R"d(8.25 23.10 to 8.25 23.10
-8.25 23.10 to 23.10 8.25
-23.10 8.25 to 8.25 23.10)d";
+    Score score1("John", 90);
+    Score score2("Mary", 80);
+
+    string name;
+    int math;
+    cin >> name >> math;
+
+    score1.setName(name);
+    score2.setMath(math);
+
+    score1.print();
+    score2.print();
 }
 
 /*
-#include <iostream>
-#include <iomanip>
-#include "Rectangle.h"
-using namespace std;
+Score:
+    string name
+    int math
+    void setName(string)
+    void setMath(int)
+    string getName()
+    int getMath()
+    void print()
 
-int main()
-{
-    Rectangle rectangle1(2.5, 3.3);
-    Rectangle rectangle2(10.5, 2.2);
+建立兩個Score
+    score1(John, 90)
+    score2(Mary, 80)
 
-    cout << fixed << setprecision(2) << rectangle1.getArea() << " " << rectangle1.getPerimeter() << endl;
-    cout << fixed << setprecision(2) << rectangle2.getArea() << " " << rectangle2.getPerimeter() << endl;
-
-    // rectangle2.setRectangle(5.0, 2.5);
-
-    // cout << fixed << setprecision(2) << rectangle2.getArea() << " " << rectangle2.getPerimeter() << endl;
-}
-*/
-
-/*
-傳遞物件之函數設計
-主程式建立兩個長方形
-(2.5, 3.3) (10.5, 2.2)
-然後利用課本範例11.4 TestPoint
+然後輸入string name, int math
+    score1.setName(name)
+    score2.setMath(math)
 */
